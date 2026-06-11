@@ -1,0 +1,22 @@
+version: v2
+
+modules:
+  - path: proto/mdo
+    name: buf.build/mdostudio/mdo
+
+    lint:
+      use:
+        - STANDARD
+
+    breaking:
+      use:
+        - FILE
+        - WIRE_JSON
+
+deps:
+  - buf.build/googleapis/googleapis
+  - buf.build/bufbuild/protovalidate
+
+breaking:
+  use:
+    - FILE
