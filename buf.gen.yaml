@@ -19,9 +19,3 @@ plugins:
   - remote: buf.build/anthropics/buffa
     out: gen/rust
     opt: [file_per_package=true, json=true, views=true]
-
-inputs:
-  - module: buf.build/mdostudio/mdo:main
-    exclude_paths:
-      - proto/tests
-      - proto/experimental
